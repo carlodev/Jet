@@ -79,7 +79,7 @@ Curve Loop(4) = {10, 4, -15, -2};
 //+
 Plane Surface(4) = {4};
 //+
-Curve Loop(5) = {16, -6, -11, 4};
+Curve Loop(5) = {-16, -6, 11, 4};
 //+
 Plane Surface(5) = {5};
 //+
@@ -99,7 +99,7 @@ Physical Surface("Fluid", 23) = {1, 2, 3, 4, 5};
 //+
 N = DefineNumber[ 100, Name "Parameters/N" ];
 //+
-Transfinite Curve {5, 3, 1, 2, 4, 6} = N Using Progression 1.01;
+Transfinite Curve {5, 3, 1, 2, 4, 6} = 2*N Using Progression 1.005;
 //+
 Transfinite Curve {7, 12, 11, 16} = N/4 Using Progression 0.95;
 //+
